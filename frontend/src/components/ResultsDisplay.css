@@ -1,0 +1,120 @@
+.results-container {
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.proposal-box {
+  background: linear-gradient(135deg, #fef5e7 0%, #fae8d6 100%);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 4px solid #f39c12;
+}
+
+.proposal-box h2 {
+  margin: 0 0 10px 0;
+  color: #d68910;
+  font-size: 18px;
+}
+
+.proposal-box p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-size: 22px;
+  margin: 30px 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.opinions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .opinions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.opinion-card {
+  background: linear-gradient(135deg, #ecf0f1 0%, #f5f7fa 100%);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  transition: all 0.3s ease;
+}
+
+.opinion-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.opinion-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.opinion-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.opinion-text {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.final-decision-box {
+  background: linear-gradient(135deg, #d5f4e6 0%, #c8e6c9 100%);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #27ae60;
+  margin-bottom: 20px;
+}
+
+.final-decision-box p {
+  margin: 0;
+  color: #1b5e20;
+  font-size: 15px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.metadata {
+  text-align: center;
+  color: #95a5a6;
+  font-size: 12px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ecf0f1;
+}
